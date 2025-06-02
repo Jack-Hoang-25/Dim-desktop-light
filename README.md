@@ -6,5 +6,6 @@ to wait between running the script and reforcusing the video player windows, but
 figure out how to make this a real program with buttons and always on top. 
 
 Useage:
+
 Run the script then left click to set the top left of the video player then left click again to set the 
 bottom right of the video player. Afterward, click anywhere on the blackoverlay to exit.  

@@ -49,12 +49,12 @@ def main():
 
     root.attributes("-transparentcolor", "red")                                 # set anything with red color will be see through, this will be for the video frame
     
-    canvas = Canvas(root, width=screen_width, height=screen_height, borderwidth=0, highlightthickness=0, background="black")        # the canvas will act as the black background
+    canvas = Canvas(root, width=screen_width, height=screen_height, borderwidth=0, highlightthickness=0, background="black")        # the canvas will act as the black overlay
     canvas.grid(sticky=(N, W, E, S))
     
     # Insert helping text to stop the program
-    dynamic_font_size = int(screen_height/70)                                   # variable to change font size depending on the screen size.... The current ratio is /70
-    canvas.create_text(10, 10, text='Press ESC or click on black bar to close', anchor='nw', font=('Arial', dynamic_font_size, 'bold'), fill='white')
+    dynamic_font_size = int(screen_height/75)                                   # variable to change font size depending on the screen size
+    canvas.create_text(10, 10, text='Click on black overlay to close', anchor='nw', font=('Arial', dynamic_font_size, 'bold'), fill='white')
     canvas.create_rectangle(left_x, top_y, right_x, bottom_y, fill='red')      
 
     root.mainloop()
